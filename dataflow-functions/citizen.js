@@ -1,7 +1,7 @@
 function transform(line){
     var values = line.split(',');
     var obj = new Object();
-    obj.name = values[0];
+    obj.fullname = values[0];
     obj.phone = values[1];
     obj.hobbies = values[2];
     obj.games = values[3];
