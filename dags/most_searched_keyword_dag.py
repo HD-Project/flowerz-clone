@@ -8,8 +8,8 @@ from airflow import configuration
 from airflow.models import Variable
 
 default_args = {
-    'owner': 'okza',
-    'email': 'datokza@gmail.com',
+    'owner': 'reza',
+    'email': ['rezaprimasatya@gmail.com'],
 }
 
 COMPOSER_BUCKET_NAME = Variable.get('COMPOSER_BUCKET_NAME')

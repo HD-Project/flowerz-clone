@@ -5,8 +5,8 @@ from airflow.operators.dummy import DummyOperator
 from airflow.models import Variable
 
 default_args = {
-    'owner': 'okza',
-    'email': 'datokza@gmail.com',
+    'owner': 'reza',
+    'email': ['rezaprimasatya@gmail.com'],
 }
 
 PROJECT_ID = Variable.get('PROJECT_ID')
