@@ -7,10 +7,10 @@ from airflow.providers.google.cloud.operators.dataflow import DataflowCreatePyth
 from airflow import configuration
 
 default_args = {
-    'owner': 'okza',
-    'email': ['okzamahendra29@gmail.com'],
+    'owner': 'reza',
+    'email': ['rezaprimasatya@gmail.com'],
 }
-
+# new
 CONF_BASE_DIR = os.path.dirname(configuration.conf.get('core', 'dags_folder'))
 BASE_DIR = f"gs://{os.environ.get('BUCKET_NAME')}" if os.environ.get('ENVIRONMENT') == 'production' else CONF_BASE_DIR
 DATAFLOW_FUNCTIONS_PATH =  f'{BASE_DIR}/dataflow-functions/process_citizen_txt.py' if "gs://" in BASE_DIR else os.path.join(CONF_BASE_DIR, 'dataflow-functions', 'process_citizen_txt.py')

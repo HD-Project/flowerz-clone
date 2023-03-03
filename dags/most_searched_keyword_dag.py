@@ -11,7 +11,7 @@ default_args = {
     'owner': 'reza',
     'email': ['rezaprimasatya@gmail.com'],
 }
-
+# new
 COMPOSER_BUCKET_NAME = Variable.get('COMPOSER_BUCKET_NAME')
 BUCKET_NAME = Variable.get('BUCKET_NAME')
 OUTPUT = Variable.get('MOST_SEARCHED_KEYWORDS_BQ_OUTPUT_TABLE')
